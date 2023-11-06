@@ -6,16 +6,8 @@
   </div>
 </template>
 
-<script setup lang="ts">
+<script setup>
 const appConfig = useAppConfig();
-</script>
 
-<style>
-@import url("assets/css/main.css");
-* {
-  font-family: "Poppins", sans-serif;
-}
-html {
-  background-color: white;
-}
-</style>
+console.log(appConfig.ui);
+</script>

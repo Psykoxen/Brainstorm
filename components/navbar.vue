@@ -1,25 +1,22 @@
 <script setup>
 const items = [
   {
-    label: "Home",
+    label: "Menu",
+    content: "This is the content shown for Tab1",
   },
   {
     label: "Podcasts",
+    content: "And, this is the content for Tab2",
   },
   {
     label: "Decrypt",
+    content: "Finally, this is the content for Tab3",
   },
 ];
-
-function onChange(index) {
-  const item = items[index];
-
-  alert(`${item.label} was clicked!`);
-}
 </script>
 
 <template>
-  <UTabs color="primary" :items="items" class="w-1/3 m-auto" @change="onChange">
+  <UTabs color="white" :items="items" class="w-1/3 m-auto">
     <template #default="{ item, index, selected }">
       <span class="">{{ item.label }}</span>
     </template>
