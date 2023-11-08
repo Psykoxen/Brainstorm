@@ -2,23 +2,24 @@
 const items = [
   {
     label: "Menu",
-    content: "This is the content shown for Tab1",
+    route: "/",
   },
   {
     label: "Podcasts",
-    content: "And, this is the content for Tab2",
+    route: "/podcasts",
   },
   {
     label: "Decrypt",
-    content: "Finally, this is the content for Tab3",
+    route: "/decrypt",
   },
 ];
+
+function onChange(index) {
+  const item = items[index];
+  navigateTo(item.route);
+}
 </script>
 
 <template>
-  <UTabs color="white" :items="items" class="w-1/3 m-auto">
-    <template #default="{ item, index, selected }">
-      <span class="">{{ item.label }}</span>
-    </template>
-  </UTabs>
+  <UTabs color="white" :items="items" @change="onChange" class="w-1/3 m-auto" />
 </template>
