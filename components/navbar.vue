@@ -21,5 +21,10 @@ function onChange(index) {
 </script>
 
 <template>
-  <UTabs color="white" :items="items" @change="onChange" class="w-1/3 m-auto" />
+  <UTabs
+    color="white"
+    :items="items"
+    @change="onChange"
+    class="lg:w-1/3 w-2/3 m-auto"
+  />
 </template>
