@@ -9,4 +9,10 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
+  runtimeConfig: {
+    public: {
+      clientId: "", // can be overridden by NUXT_API_SECRET environment variable
+      clientSecret: "",
+    },
+  },
 });
