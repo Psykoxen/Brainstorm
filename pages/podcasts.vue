@@ -1,6 +1,8 @@
 <template>
   <div class="flex items-center flex-col">
-    <p class="text-red-600 text-3xl m-10 font-semibold">{{ podcastName }}</p>
+    <p class="text-chart-purple-800 text-3xl m-10 font-semibold">
+      {{ podcastName }}
+    </p>
     <img class="h-56" id="cover-image" :src="coverImageUrl" alt="Cover Image" />
     <UTable
       class="lg:w-2/4 w-2/3"
@@ -78,7 +80,7 @@ const _getToken = async () => {
 const _getShow = async (token) => {
   try {
     const result = await fetch(
-      "https://api.spotify.com/v1/shows/4jaLLRDjv0OvVT3QBSuza2",
+      "https://api.spotify.com/v1/shows/4lSsudgJrssq6PXGpEbaWs",
       {
         method: "GET",
         headers: { Authorization: "Bearer " + token },

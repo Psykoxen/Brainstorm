@@ -3,7 +3,7 @@
     class="summary w-3/4 lg:w-1/3 mx-auto grid grid-cols-2 grid-rows-4 pt-10 gap-5"
   >
     <a
-      href="/podcast"
+      href="/podcasts"
       class="flex flex-col gap-8 justify-end row-start-1 row-end-3 bg-chart-blue-300 rounded-lg shadow-md p-4"
     >
       <img src="../assets/svg/podcast.svg" class="h-80" alt="Podcast SVG" />
